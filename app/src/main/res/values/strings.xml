@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FinalAplikasiGithubUser</string>
+
+    <string name="followers">Followers </string>
+    <string name="following">Following </string>
+    <string name="name">Name :</string>
+    <string name="location">Location :</string>
+    <string name="bio">Bio :</string>
+    <string name="company">Company :</string>
+    <string name="share">Share</string>
+    <string name="smaple">sample</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>
