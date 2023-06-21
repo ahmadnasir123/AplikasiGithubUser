@@ -42,7 +42,7 @@ class DetailUserActivity : AppCompatActivity() {
         setContentView(detalBinding.root)
 
         val actionbar = supportActionBar
-        actionbar?.title = "Detail User"
+        actionbar?.title = getString(R.string.detail_user)
 
         viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
 

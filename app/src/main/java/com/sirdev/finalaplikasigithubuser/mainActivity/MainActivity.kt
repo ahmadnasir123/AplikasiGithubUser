@@ -45,14 +45,13 @@ class MainActivity : AppCompatActivity() {
         val switchTheme = findViewById<SwitchMaterial>(R.id.switch_theme)
 
         val pref = SettingPreferences.getInstance(dataStore)
-        val mainViewModel = ViewModelProvider(this, ViewModelFactory(pref)).get(MainViewModel::class.java)
+        val mainViewModel = ViewModelProvider(this,
+        ViewModelFactory(pref)).get(MainViewModel::class.java)
         mainViewModel.getThemeSettings().observe(this) { isDarkModeActive: Boolean ->
             if (isDarkModeActive) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                switchTheme?.let {
-                    it.setChecked(true)
-                } ?: run {
-                    // handle null object reference here
+                switchTheme?.setChecked(true) ?: run {
+
                 }
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val actionbar = supportActionBar
-        actionbar?.title = "Search User"
+        actionbar?.title = getString(R.string.search_user)
 
 
 

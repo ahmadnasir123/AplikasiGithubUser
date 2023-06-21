@@ -38,7 +38,6 @@ class ThemeActivity : AppCompatActivity() {
 
         switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
             mainViewModel.saveThemeSetting(isChecked)
-
         }
 
     }

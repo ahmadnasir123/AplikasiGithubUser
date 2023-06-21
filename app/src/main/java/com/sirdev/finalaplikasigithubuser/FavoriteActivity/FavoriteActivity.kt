@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.sirdev.finalaplikasigithubuser.R
 import com.sirdev.finalaplikasigithubuser.database.FavoriteUser
 import com.sirdev.finalaplikasigithubuser.databinding.ActivityFavoriteBinding
 import com.sirdev.finalaplikasigithubuser.detailActivity.DetailUserActivity
@@ -25,7 +26,7 @@ class FavoriteActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val actionbar = supportActionBar
-        actionbar?.title = "Favorite User"
+        actionbar?.title = getString(R.string.favorite_user)
 
 
 

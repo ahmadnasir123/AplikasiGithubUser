@@ -10,4 +10,7 @@
     <string name="share">Share</string>
     <string name="smaple">sample</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="detail_user">Detail User</string>
+    <string name="favorite_user">Favorite User</string>
+    <string name="search_user">Search User</string>
 </resources>
